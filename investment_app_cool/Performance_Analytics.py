@@ -8,7 +8,6 @@ if "selected_portfolio" in st.session_state:
     portfolio = st.session_state["selected_portfolio"]
     st.header(f"Performance Overview: {portfolio}")
 
-    # Dummy data
     dates = pd.date_range(start="2024-01-01", periods=100)
     returns = np.cumsum(np.random.randn(100))
     data = pd.DataFrame({"Date": dates, "Return": returns})
